@@ -23,7 +23,7 @@ You are a helpful travel assistant. Your goal is to provide the user with latest
     user_req = HumanMessage(
         content="The user's request is: \n"
         + request
-        + "Valid modes of transport include: walking, driving, transit, bicycling. If an invalid mode of transport is provided, let the user know that their desired mode of transport is unsupported and do not invoke the tool. If the user did not specify a mode of transport, assume they are driving. If an ambigious location (origin or destination) is specified by the user (e.g. Walgreens, since there are many Walgreens to choose from), use your own knowledge to assume the closest location to the other non-ambigous location specified in the user's request and provide an address in the tool invocation. If you cannot find a location, ask the user for more input by providing them some options. Do not invoke the tool with ambigious location like."
+        + "Valid modes of transport include: walking, driving, transit, bicycling. If an invalid mode of transport is provided, let the user know that their desired mode of transport is unsupported and do not invoke the tool. If the user did not specify a mode of transport, assume they are driving. If an ambigious location (origin or destination) is specified by the user (e.g. Walgreens, since there are many Walgreens to choose from), use your own knowledge to assume the closest location to the other non-ambigous location specified in the user's request and provide an address in the tool invocation. If you cannot find a location, ask the user for more input by providing them some options. Do not invoke the tool with ambigious location like 'Safeway'."
     )
 
     # provide tools to the model
